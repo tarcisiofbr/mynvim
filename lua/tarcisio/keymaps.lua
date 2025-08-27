@@ -9,21 +9,15 @@ vim.keymap.set('n', '<leader>,', ':split<CR>:terminal<cr>', { desc = 'Open termi
 vim.keymap.set('n', '<leader>z', ':w<CR>:source ~/.config/nvim/init.lua<CR>', { desc = 'source init.lua' })
 vim.keymap.set('n', '<leader>bq', ':bd<CR>', { desc = 'close current buffer' })
 
--- Code section
--- vim.keymap.set('n', '<leader>ai', 'i#! <ESC>80i-<ESC>0lli  <ESC>i')
--- vim.keymap.set('n', '<leader>ac', '80|C<ESC>0')
--- vim.keymap.set('n', '<leader>ap', ":lua vim.fn.expand('%')<CR>o<C-r>%<ESC><C-v>0d:split<CR>:terminal<CR>igrep '^#!' <C-\\><C-n>pi<CR>exit")
-
 -- Outline
 vim.keymap.set('n', '<leader>n', ':Outline<CR>:set number relativenumber<CR>', { desc = 'Open buffer outline' })
 
 -- Neo-tree
 vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>:set number relativenumber<CR>', { desc = 'Toggle file tree' })
 
--- Git
--- vim.keymap.set('n', '<leader>gp', ':! git add --all && git commit -m "update" && git push origin main<CR>')
-
--- Telescope
+-- Writing text
+vim.keymap.set('n', '<leader>tf', ':set textwidth=0 wrapmargin=0 wrap linebreak columns=100<CR>', { desc = 'Wrap text for better editing notes' })
+vim.keymap.set('n', '<leader>tu', ':set nowrap nolinebreak columns=180<CR>', { desc = 'Reset wrapping to columns=180' })
 
 -- Execute codes in interactive mode
 -- vim.keymap.set('n', '<leader>rl', 'yy<C-w>wpi<CR><C-\\><C-n><C-w>wj', { desc = 'run line and go to the next line' })
