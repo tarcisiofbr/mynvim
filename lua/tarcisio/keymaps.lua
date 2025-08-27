@@ -23,6 +23,8 @@ vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>:set number relativenumber<
 -- Git
 -- vim.keymap.set('n', '<leader>gp', ':! git add --all && git commit -m "update" && git push origin main<CR>')
 
+-- Telescope
+
 -- Execute codes in interactive mode
 -- vim.keymap.set('n', '<leader>rl', 'yy<C-w>wpi<CR><C-\\><C-n><C-w>wj', { desc = 'run line and go to the next line' })
 -- vim.keymap.set('n', '<leader>rr', 'yy<C-w>wpi<CR><C-\\><C-n><C-w>w', { desc = 'run line and stay in line' })
