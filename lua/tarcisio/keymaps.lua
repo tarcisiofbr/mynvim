@@ -16,7 +16,7 @@ vim.keymap.set('n', '<leader>n', ':Outline<CR>:set number relativenumber<CR>', {
 vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>:set number relativenumber<CR>', { desc = 'Toggle file tree' })
 
 -- Writing text
-vim.keymap.set('n', '<leader>tf', ':set textwidth=0 wrapmargin=0 wrap linebreak columns=100<CR>', { desc = 'Wrap text for better editing notes' })
+vim.keymap.set('n', '<leader>tf', ':set textwidth=0 wrapmargin=0 wrap linebreak columns=150<CR>', { desc = 'Wrap text for better editing notes' })
 vim.keymap.set('n', '<leader>tu', ':set nowrap nolinebreak columns=180<CR>', { desc = 'Reset wrapping to columns=180' })
 
 -- Execute codes in interactive mode
