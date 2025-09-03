@@ -35,3 +35,9 @@ require("lazy").setup({
 })
 
 require("mason").setup()
+require("mini.surround").setup()
+require("cmp").setup {
+  sources = {
+    { name = "cmp_r" },
+  }
+}
