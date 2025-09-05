@@ -8,6 +8,7 @@ vim.keymap.set('n', '<leader>w', '<C-w>')
 vim.keymap.set('n', '<leader>,', ':split<CR>:terminal<cr>', { desc = 'Open terminal' })
 vim.keymap.set('n', '<leader>z', ':w<CR>:source ~/.config/nvim/init.lua<CR>', { desc = 'source init.lua' })
 vim.keymap.set('n', '<leader>bq', ':bd<CR>', { desc = 'close current buffer' })
+vim.keymap.set('n', 'zv', 'zt<S-l>10j<S-H>', { desc = 'close current buffer' })
 
 -- Outline
 vim.keymap.set('n', '<leader>n', ':Outline<CR>:set number relativenumber<CR>', { desc = 'Open buffer outline' })
