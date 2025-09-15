@@ -15,6 +15,7 @@ vim.keymap.set('n', 'tk', '<C-w>t<C-w>K15<C-w>-', { desc = 'current line to top'
 
 -- Outline
 vim.keymap.set('n', '<leader>n', ':Outline<CR>:set number relativenumber<CR>', { desc = 'Open buffer outline' })
+vim.keymap.set('n', '<leader>u', ':Outline<CR>:Outline<CR>', { desc = 'Open buffer outline' })
 
 -- Neo-tree
 vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>:set number relativenumber<CR>', { desc = 'Toggle file tree' })
