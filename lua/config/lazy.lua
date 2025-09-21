@@ -37,3 +37,5 @@ require("lazy").setup({
 require("mason").setup()
 require("mini.surround").setup()
 require('comfy-line-numbers').setup()
+
+vim.cmd.colorscheme("moonfly")
